@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Degradado css</title>
+	<style>
+		
+		#dos{
+			border:2px solid #EB3669;
+			text-align: center;
+			width: 20%;
+			margin: auto;
+			border-radius: 30px 2px 20px 5px;
+			font-size: 30px;
+			text-shadow: #3CEC76 5px 3px 2px;
+			padding: 10px;
+			background: -moz-linear-gradient(left,#0D23F7 ,#4FCFF4 );/*mozilla*/
+			background: -webkit-linear-gradient(left,#0D23F7,#4FCFF4);/*chrome*/
+
+		}
+
+		#dos:hover{
+			-moz-transform:rotate(10deg);
+			-moz-transition:-moz-transform 2s ease 0.3s;
+		}
+		
+		 #uno{
+			border:2px solid #EB3669;
+			text-align: center;
+			width: 20%;
+			margin: auto;
+			border-radius: 30px 2px 20px 5px;
+			font-size: 30px;
+			text-shadow: #3CEC76 5px 3px 2px;
+			padding: 10px;
+			background: -moz-radial-gradient(center,circle,#941111,#1A1AFC);/*mozilla*/
+			background: -webkit-radial-gradient(center,circle,#0D23F7,#4FCFF4);/*chrome*/
+			-moz-transform:scale(0.5);
+		}
+		 #uno:hover{
+			border:2px solid #EB3669;
+			text-align: center;
+			width: 20%;
+			margin: auto;
+			border-radius: 30px 2px 20px 5px;
+			font-size: 30px;
+			text-shadow: #3CEC76 5px 3px 2px;
+			padding: 10px;
+			background: -moz-radial-gradient(center,circle,#941111,#1A1AFC);/*mozilla*/
+			background: -webkit-radial-gradient(center,circle,#0D23F7,#4FCFF4);/*chrome*/
+			-moz-transform:scale(1);
+		}
+		
+		#tres{
+
+		border:2px solid #EB3669;
+			text-align: center;
+			width: 20%;
+			margin: auto;
+			border-radius: 30px 2px 20px 5px;
+			font-size: 30px;
+			text-shadow: #3CEC76 5px 3px 2px;
+			padding: 10px;
+			background: -moz-radial-gradient(center,ellipse,#941111,#1A1AFC);/*mozilla*/
+			background: -webkit-radial-gradient(center,ellipse,#0D23F7,#4FCFF4);/*chrome*/	
+			outline:2px dashed #11C9F1;
+			outline-offset: 15px;
+			-moz-transform:skew(30deg);
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		
+		<p id="dos" onclick="alert('que hay')">Estilos css</p>
+		<br><br>
+		<p id="uno">Segundo estilo</p>
+		<br><br>
+		<p id="tres">Tercer estilo</p>
+
+	</div>
+</body>
+</html>

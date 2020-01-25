@@ -1,0 +1,73 @@
+h1{
+
+    font-family:"century gothic";
+    background: orchid;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    border-radius: 30px;
+    margin: 30px 20px;
+    text-shadow: 7px 5px 7px black;
+}
+
+body{
+    background: lightslategrey;
+}
+
+.menu {
+    width: 100%;
+    list-style-position: inside;
+    list-style:none;
+    background: maroon;
+    border-radius: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li{
+    display: inline-block;
+}
+
+.menu li a{
+display: inline-block;
+ padding: 10px 20px;
+ color: whitesmoke;
+}
+
+.menu li a:hover{
+
+    background: white;
+    color: black;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.menu li a:active{
+    background: lightyellow;
+}
+
+
+.verLogo{
+    display: block;
+    margin: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: deeppink;
+    font-size: 30px;
+    background: white;
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.verLogo:hover{
+    background: deeppink;
+    color: white;
+    box-shadow: 5px 5px 0px white;
+}
+
+sub{
+    text-align: right;
+    display: block;
+    color: maroon;
+}

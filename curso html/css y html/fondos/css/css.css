@@ -1,0 +1,8 @@
+body{
+background: url(../imagenes/logo.png);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: 50% 10%;/*Posiciona la imagen 50% a la derecha y 10% de arriba hacia abajo */
+/*background-position: center 0;   esta es otra manera lo centra y de arriba hacia abajo cero empieza en la parte superior por el cero*/
+
+}

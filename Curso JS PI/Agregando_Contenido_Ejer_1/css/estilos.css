@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #061F1D;
+	color: #D0F917;
+}
+
+form{
+	
+	border: 2px solid #000;
+	width: 25%;
+	margin: 50px auto;
+	padding: 10px;
+	border-color: #0E83F0;
+	background:#3D7C48;
+}
+
+label{
+	display: block;
+	font-weight: bold;
+	
+}
+
+input{
+	padding: 7px;
+	margin-bottom: 10px;
+	width: 70%;
+	font-family:Gotham, Helvetica Neue, Helvetica, Arial," sans-serif";
+}
+
+form p{
+	text-transform: uppercase;
+	text-align: center;
+	border-bottom: 3px dashed #F12D31;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	color:#FBB507;
+	font-weight: bold;
+}
+
+#enviar{
+ 	display: block;
+	width: 35%;
+	height: 50px;
+	margin: auto;
+}
+
+#enviar:hover{
+	background: #000;
+	color: #fff;
+}
+

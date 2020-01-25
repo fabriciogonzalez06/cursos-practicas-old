@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Eventos JQuery</title>
+<style type="text/css">
+	
+	html{
+		background-color: #17133A;
+	}
+	
+	#principal{
+		width: 70%;
+		margin: auto;
+	}
+	
+	h1,legend,a{
+		color: white;
+		font-family: Baskerville, Palatino Linotype, Palatino, Century Schoolbook L, Times New Roman, serif;
+		font-size: 1.5em;
+	}
+	
+	.parrafo{
+		color: white;
+		font-size: 1.5em;
+	}
+	
+	</style>
+	<script src="JQuery/jquery-3.3.1.js"></script>
+	<script>
+	
+		$(document).ready(function(){
+			
+			$("body").hide().fadeIn(4000);
+			
+			//cuando haga doble click en el documento html
+			$("html").dblclick(function(){
+				alert("Hay!!");
+			});
+			
+			//mensaje con append
+			var mensaje="<p class='parrafo'>Estas pasando el ratón por encima</p>";
+			$("a").mouseover(function(){
+				
+				$("#principal").append(mensaje);
+				
+			});
+			
+			//cambiar el valor del boton 
+			$("#el_boton").click(function(){
+				$(this).val("deja de precionar el boton");
+			});
+			
+			//cambiando el valor a la caja de texto 
+			$("#el_campo").focusin(function(){
+				$(this).val("ingresa el texto aquí");
+			});
+		});
+		
+	</script>
+
+</head>
+
+<body>
+<div id="principal">
+	
+	<h1>Introduccion a eventos</h1>
+	
+	<p><a href="#">Un link</a></p>
+	<form action="#" method="get">
+		
+		<fieldset>
+			<legend>Formulario</legend>
+			<p><input type="button" name="button" id="el_boton" value="un boton"></p>
+			<p><input type="text" name="textfield" id="el_campo"></p>
+			
+			
+		</fieldset>
+	</form>
+</div>
+</body>
+</html>

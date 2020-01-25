@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Condicionales I</title>
+<link rel="stylesheet" href="css/estilos.css">
+<link rel="shortcut icon" href="imagenes/icono.ico">
+
+<script>
+
+	var premio=4000;
+	var obs="";
+	
+	var nombre=prompt("Ingrese su nombre");
+	var apellido=prompt("Ingrese su apellido");
+	var edad=prompt("Ingrese su edad");
+	
+	var saldo=prompt("Ingrese su saldo bancario");
+
+	//evaluar si el sando bancario es mayor que cuatro mil mostrar mensaje que ha ganado aumento 
+	if(saldo>=premio){
+		
+		obs="Ha ganado un aumento";
+	}else{
+		obs="No hay premio";
+	}
+</script>
+
+</head>
+
+<body>
+
+<div id="principal">
+	
+	<div ><img src="imagenes/js.png" alt="" id="imagen"></div>
+	<h1>CONDICIONALES 1</h1>
+	
+	<h3>Programaci&oacute;n con JavaScript</h3>
+	
+	<script>
+	document.write("<p><Strong>Nombre:</strong> " + nombre + "</br>" + "<strong>Apellido:</strong> " + 
+				  apellido + "</br> <strong>Edad:</strong> "  + edad + "</br><strong>Observación:</strong> " +
+				  obs);
+	
+		//alert("Gracias");
+	</script>
+	
+	<div id="pie">
+		
+		<p>2018 Angel Fabricio González</p>
+		
+	</div>
+	
+	<script>
+	
+		var pie=document.getElementById("pie");
+		pie.style.backgroundColor="#000";
+		pie.style.padding="30px";
+		pie.style.textAlign="center";
+		pie.style.marginTop="30px";
+	</script>
+	
+</div>
+
+</body>
+</html>

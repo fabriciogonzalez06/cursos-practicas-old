@@ -1,0 +1,34 @@
+
+div{
+	/*background: #ccc;*/
+	width: 100%;
+}
+
+.primerEjemplo{
+
+	width: 200px;
+	height: 200px;
+	/*margin: auto;centrar siempre que este en block*/
+	display: block;
+	border-radius: 50%;
+	box-shadow: 5px 5px 0px orange;
+	margin: 10px;
+}
+
+
+.marco{
+
+	width: 100%;
+
+
+}
+
+.marcoImagen{
+
+
+	width: 200px;
+	border-radius: 10px;
+	padding: 10px;
+	border: 1px solid #000;
+
+}

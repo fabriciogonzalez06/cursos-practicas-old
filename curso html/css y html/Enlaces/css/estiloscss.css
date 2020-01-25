@@ -1,0 +1,83 @@
+body{
+
+	background: grey;
+}
+
+h1{
+
+	text-align: center;
+	font-family: "Century Gothic";
+	color: white;
+	background: green;
+	letter-spacing: 4px;
+	text-shadow: 5px 5px 5px black;
+	padding: 10px;
+	font-size: 40px;
+
+}
+
+
+
+a{
+	font-size: 20px;
+	margin: 10px 20px ; /*margenes segun las manesillas del reloj*/
+	display: inline-block;
+	text-decoration: none;
+	background: #3ba7e1;
+	color: #fff;
+	padding: 10px 10px;
+	box-shadow: 0px 5px 0px #1d64a6;
+
+}
+
+a:hover{
+
+	box-shadow: 0px 2px 0px #1d64a6;
+}
+
+
+a:active{
+	box-shadow: none;
+}
+
+/*-------------------------------------------------------------*/
+/*
+
+PEUSDOCLASES
+
+
+
+a:link{pseudoclase para los links que no han sido visitados
+	color: green;
+	
+}
+
+a:visited{enlaces ya visitados
+
+	color: orange;
+}
+
+a:hover{Cuando el cursor pase por el link
+
+	text-decoration: underline;
+	background: #000;
+	color: white;
+}
+
+a:active{Cuando se da click
+
+	background: #ff8000;
+
+}
+
+Botones
+
+.boton{
+
+	background: lightblue;
+	text-shadow: 0px 5px 0px black;
+
+}
+
+
+*/

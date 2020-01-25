@@ -1,0 +1,58 @@
+/*posisionamiento de cajas*/
+
+div{
+    width: 100px;
+    height: 100px;
+    background: #4a88f4;
+    color: #fff;
+    font-size: 30px;
+    
+    
+}
+
+
+.caja{
+    position: relative;/*se puede utilizar las siguientes propiedades y esta propiedad siempre deja el espacio */
+    top:0 ;/*Posiciona 100 pixeles de arriba a abajo*/
+    bottom:0 ;
+    right: 0;
+    left:200px;/*Posiciona 200 pixeles de la izquierda a la derecha*/
+    
+}
+
+
+.caja2{
+    
+    position: absolute;/*Esta propiedad si quita los espacios a diferencia del relative que no lo hace*/
+    top:0;
+    right: ;
+    left: 300px;
+    bottom:0;
+}
+
+.tres{
+    position: fixed;/*No se mueve de la pantalla por mas que se posicione o mueva el scroll*/
+    top: 0;
+    right: 0;
+    left: 300px;
+    bottom:0;
+}
+
+.padre{
+    
+    background: black;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+
+
+.hijo{
+     position: absolute;/*Esta propiedad si quita los espacios a diferencia del relative que no lo hace*/
+    top:0;
+    right: ;
+    left: 300px;
+    bottom:0;
+    
+}

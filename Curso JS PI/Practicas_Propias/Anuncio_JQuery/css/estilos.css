@@ -1,0 +1,148 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*fuentes generales */
+
+h1,h3,p{
+	font-size: 1.5em;
+	font-family: "century gothic","franklin gothic bold";
+}
+
+/*contenedor principal*/
+
+#principal{
+	width: 80%;
+	margin: 0 auto;
+	background: #F9DFDF;
+}
+
+/***************************************BANNER*************************/
+
+#imagen img{
+	width:15%;
+	
+	
+}
+
+/**********************************BARRA DE NAVEGACIÓN******************************/
+
+#barranavegacion li a{
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px;
+	font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
+}
+
+#barranavegacion li a:hover{
+	background-color: #000;
+	color: #fff;
+	
+}
+
+#barranavegacion li{
+	display: inline-block;
+	
+}
+
+#barranavegacion{
+	list-style: none;
+	background-color: #2DEFC1;
+	margin-top: -4px;
+	
+}
+
+/*********************CONTENIDO***************************************************/
+h1{
+	font-size: 2em;
+	color: #782627;
+	margin-left: 10px;
+	border-bottom: 2px solid #D6F42F;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/*****************IMAGENES DE LA TABLA**************************************/
+table{
+	width: 50%;
+	margin-bottom: 200px;
+}
+
+.columna img{
+	width: 200px;
+	height: 100px;
+}
+
+p{
+	font-size: 1.5em;
+	text-align: center;
+	color:#111DF7;
+}
+
+/***************************BOTONES**************************/
+ .columna input[type="button"]{
+	width: 100px;
+	 height: 50px;
+	text-align: center;
+	 margin-left: 40px;
+	 font-weight: bold;
+}
+
+/***********************ANUNCIO***********************************/
+
+#anuncio{
+	background: #38E76D;
+	width: 25%;
+	height: 300px;
+	text-align: center;
+	border: 2px dashed #000000;
+	position: absolute;
+	padding-top: 20px;
+	top: 100px;
+	left: 600px;
+}
+
+#cerrarAnuncio{
+	position: absolute;
+	width: 50px;
+	font-weight: bold;
+	top: 0;
+	right: 0;
+}
+
+#cerrarAnuncio:hover{
+	background: #ED090D;
+	color: white;
+}
+
+h3{
+	color:#621A5F;
+}
+
+
+/*****************************FOOTER*****************/
+#footer{
+	background: #2DEFC1;
+	padding: 40px;
+}
+
+/*Estilos para remplazar al momento de hacer la compra*/
+#imagen1, #imagen2,#imagen3,#imagen4{
+	width: 200px;
+	height: 100px;
+	background: #F58486;
+	
+}
+
+
+/*Clase para utilizar el cambio de estilos con jQuery*/
+.cambiarEstilo{
+font-family: Gotham, Helvetica Neue, Helvetica, Arial," sans-serif";
+	text-align: center;
+	text-decoration: underline;
+	text-transform: uppercase;
+}

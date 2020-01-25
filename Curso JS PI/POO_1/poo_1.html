@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Programaci&oacute;n arientada a objetos</title>
+</head>
+
+<body >
+
+<input type="button" id="boton1">
+<input type="button" id="boton2">
+<input type="text" id="micuadro">
+
+<script>
+
+	//modificar el ancho de un botón 
+	//obtener el botón del código html
+	
+	var miboton=document.getElementById("boton1");
+	
+	//obtener el segundo boton
+	var miboton2=document.getElementById("boton2");
+	
+	//obtener la caja de texto
+	var cuadroTexto=document.getElementById("micuadro");
+	
+	var principal=document.getElementById("pagina");
+	
+	
+	//cambiar propiedades del boton almacenado en miboton
+	
+	miboton.style.width="300px";
+	miboton.style.height="300px";
+	
+	miboton2.style.width="300px";
+	miboton2.style.height="300px";
+	miboton2.focus();
+	
+	//cuadro texto 
+	cuadroTexto.style.background="red";
+	cuadroTexto.value="Ingresa algo";
+	cuadroTexto.style.color="#fff";
+	
+	
+	//miboton.style.borderTop="5px dotted #000";
+	
+	//miboton.style.backgroundColor="blue";
+	
+</script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<style>
+
+#imagenes{
+	width:1475px;
+	margin:auto;
+	
+}
+img{
+	padding:20px 30px;
+}
+
+#mensaje_img1 {
+	position: absolute;
+	left: 323px;
+	top: 292px;
+	width: 381px;
+	height: 115px;
+	background-color: #FF9;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 25px;
+	border: dotted 2px #00F;
+}
+</style>
+
+<script src="JQuery/jquery-3.3.1.js"></script>
+
+<script>
+
+	$(document).ready(function(){
+		
+		$("body").hide().fadeIn(3000);
+		
+		//ocultar el cuadro mensaje 
+		$("#mensaje_img1").hide();
+		
+		//apuntar a la imagen 1 para utilizar el metodo hover
+		$("#imagen1").hover(mensaje_on,mensaje_off);
+	});
+	
+	
+	//funcion para ocultar imagen1 
+	function mensaje_off(){
+		$("#mensaje_img1").hide();
+	}
+	
+	//funcion para mostrar imagen 1
+	function mensaje_on(){
+		$("#mensaje_img1").text("Bosque").show();
+	}
+</script>
+</head>
+
+<body>
+
+<div id="mensaje_img1">Preciosa encina en mitad de la meseta castellana......</div>
+<div id="imagenes">
+
+<img src="1.jpg" id="imagen1" width="200px">
+<img src="2.jpg" id="imagen2" width="200px">
+<img src="3.jpg" id="imagen3" width="200px">
+<img src="4.jpg" id="imagen4" width="200px">
+
+
+
+</div>
+</body>
+</html>

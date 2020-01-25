@@ -1,0 +1,77 @@
+body {
+	font-size: 62.5%;
+	margin: 0 auto;
+	padding: 0;
+	background-color: #FBD7D8;
+	width:75%;
+	
+}
+
+#contenido {
+	margin-left: 15px;
+	margin-top: 15px;
+	margin-right: 15px;
+	border: 1px dashed #999;
+	border-right: none;
+	border-bottom: none;
+}
+
+h1 {
+	font: normal 2.4em Verdana, Arial, Helvetica, sans-serif;
+	margin: 0;
+	border-bottom: 1px dashed #999;
+	padding: 5px 0 5px 8px;
+	color: #14556b;
+}
+
+/*estilos parráfos*/
+
+p{
+	font: 1.6em georgia,"times new roman";
+	margin: 10px 8px;
+	overflow: hidden;
+	
+}
+
+
+p:hover{
+	background-color: #C2E0F1;
+	color: black;
+}
+
+
+
+/*modificar imagen selector descendiente*/
+
+.figura img{
+	border: 1px solid #666;
+	padding: 10px;
+	
+}
+
+.figura img:hover{
+	background-color: #1AFF1F;
+	
+}
+
+
+/*poner div class figura a la derecha*/
+
+.figura{
+	
+	float:right;
+	width: 222px;
+	margin: 15px 10px 5px 10px;
+}
+
+/*cambiar parrafo de pie de figura selector descendiente*/
+
+.figura p{
+	font: bold 1em verdana,geneva;
+	color: #333;
+	text-align: center;
+	background-color:#1AFF1F;
+	border: 1px dashed #666;
+	padding: 5px;
+	margin: 10px 0 0 0;
+}

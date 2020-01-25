@@ -1,0 +1,74 @@
+body{
+    background: lightgreen;
+
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    background: darkorange;
+    padding: 20px;
+    font-family: Impact;
+    color: darkgreen;
+    text-shadow: 4px 5px 4px lightgreen;
+    border-radius: 30px;
+}
+
+div{
+    width: 100%;
+    height: auto;
+    
+}
+
+ div table{
+    
+    width: 60%;
+    display: block;
+    height: auto;
+    margin: auto;
+}
+
+div table{
+    border: 1px solid black;
+    background: #ccc;
+  
+}
+
+div table td{
+    padding :10px;
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+
+
+.cabecera{
+    text-align: center;
+    font-weight: bold;
+    background: lightseagreen;
+}
+
+
+div table tr td a{
+    text-decoration: none;
+    width: 100%;
+    
+}
+
+div table td:hover{
+    background: red;
+    color:  white;
+}
+
+
+div table tr td a:hover{
+    
+    cursor: pointer;
+}
+
+div table tr:hover{
+background: black;
+color: white;
+}
+

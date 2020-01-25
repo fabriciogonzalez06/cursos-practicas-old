@@ -1,0 +1,42 @@
+/*unidades de medida relativas y absolutas
+RELATIVAS: px,em,rem  son relativas porque se adaptan 
+ABSOLUTAS: cm,mm,in(pulgadas)
+TAMBIÉN EXISTEN LOS PORCENTAJES
+
+
+*/
+
+
+h1,h2,h3,h4,h5,h6{
+        color: blueviolet;
+} 
+
+body{
+        font-size: 16px;
+        background-color:dodgerblue;  
+    
+
+}
+
+
+
+div{
+
+    font-size: 25px;
+    background: black;
+    color: white;
+    width: 50%;
+   
+}
+
+div p{/*todo lo que esta dentro de un div que sea un parrafo tomara el tamaño de 1em y el mas cercano es el div que tiene 25
+    ese sera el tamaño que tomará y no el del body*/
+
+    font-size: 1em;
+}
+
+.hola{
+    background: pink;
+    width: 50%;
+    
+}

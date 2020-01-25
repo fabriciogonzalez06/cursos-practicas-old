@@ -1,0 +1,60 @@
+<html>
+<head>
+	<title>Formularios</title>
+	<link rel="shortcut icon" type="image/x-icon" href="icono.ico">
+</head>
+<body>
+	<h1 align="center">CREACION DE FORMULARIOS</h1><hr>
+
+	
+	<form align="center" >
+		<!--campos de texto-->
+		<label for="nombre"><b>Ingrese su nombre: </b></label>
+		<input type="text" placeholder="Escribe tu nombre" size="40" maxlength="15" name="nombre" id="nombre" class=""><br>
+		<br>
+		<label for="apellido"><b>Ingrese su apellido: </b></label>
+		<input type="text" placeholder="Escribe tu apellido" size="40" maxlength="15" name="apellido" id="apellido" class=""><br>
+		<br>
+		<!--contraseña-->
+		<label for="pass"><b>Ingrese su password: </b></label>
+		<input type="password" placeholder="Ingrese su password" size="40" maxlength="10" name="pass" id="pass" class="">
+		<br><br>
+		<!--correo electronico-->
+		<label for="email"><b>Ingrese su email: </b></label>
+		<input type="email" placeholder="Ingrese su email" size="40" name="email" id="email">
+		<br><br>
+		<!--checkBox-->
+		<b >Genero</b><br><br>
+		<input type="checkbox" id="ch" >Hombre
+		<input type="checkbox">Mujer
+		<br><br>
+		<b>Estado civil</b><br><br>
+		<input type="radio">Casado
+		<input type="radio">Soltero
+		<input type="radio">Divorciado
+		<br><br>
+		<!--select parecido a un combobox el value es el valor que se envia-->
+		<b>Seleccione su pais</b>
+		<select name="" id="">
+			<option value="Honduras">Honduras</option>
+			<option value="Costa Rica">Costa Rica</option>
+			<option value="Nicaragua">Nicaragua</option>
+			<option value="El Salvador">El Salvador</option>
+			<option value="Guatemala">Guatemala</option>
+		</select>
+		<br><br>
+		<!--boton normal-->
+		<input type="button" value="Enviar"  title="Enviar informacion" >
+		<br><br>
+		<!--boton que si envia datos-->
+		<input type="submit">
+
+
+	</form>
+
+	<hr>
+	
+	<sub>Angel Fabricio Gonzalez</sub><br>
+	<a  href="mailto:angel.fabriciogonzalez@gmail.com" title="Enviar correo a Angel" ><b >Enviar correo</b></a>
+</body>
+</html>

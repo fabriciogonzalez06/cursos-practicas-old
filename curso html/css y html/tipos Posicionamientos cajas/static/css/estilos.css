@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body{
+	
+	background: green;
+}
+
+
+div{
+	background-color: cadetblue;
+	width: 100px;
+	height: 100px;
+	font-size: 30px;
+	color: chocolate;
+}
+
+.caja{
+	
+	position: static;/*Invalida todas las propiedades y queda tal y como esta*/
+	top: 20px;
+	right: 100px;
+	left: 300px;
+	bottom: 0px;
+}

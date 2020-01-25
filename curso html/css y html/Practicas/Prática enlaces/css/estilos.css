@@ -1,0 +1,80 @@
+body{
+
+	background: yellow;
+}
+
+h1{
+	text-align:center;
+	color: blue;
+	font-family: "century gothic";
+	text-decoration: underline;
+	font-size: 40px;
+	background-color: grey;
+	padding: 10px 10px;
+	margin: 10px 10px 10px 10px;
+}
+
+hr{
+	margin: 15px 15px;
+	
+	height: 10px;
+	background: red;
+}
+
+div{
+	background: lightgreen;
+	width: 50%;
+	height: 25%;
+	text-align: center;
+	border:dotted red 10px;
+	position: relative;
+	left: 250px;
+
+
+
+
+}
+
+
+
+a{
+	margin: 20px 20px;
+	padding: 15px 15px;
+	display: inline-block;
+	background: grey;
+	width: 90px;
+	text-align: center;
+	text-decoration: none;
+	box-shadow: 0px 5px 0px blue;
+}
+
+a:visited{
+
+	background: violet;
+	font-family: arial;
+	
+	color: green;
+
+}
+
+
+a:link{
+
+	color: orange;
+ 	
+}
+
+a:hover{
+	text-decoration: underline;
+	background: lightblue;
+	box-shadow: 0px 2px 0px blue;
+
+
+}
+
+a:active{
+	color:red;
+	box-shadow: none;
+}
+
+

@@ -1,0 +1,6 @@
+nombre: fabricio
+Edad: 56
+nombre: fabricio
+nombre: fabricio
+Apellido: gonzalez
+Edad: 12

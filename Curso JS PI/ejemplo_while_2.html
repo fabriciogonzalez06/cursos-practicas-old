@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ejemplo 2 while</title>
+</head>
+<style>
+
+	#contenedor{
+		width: 25%;
+		background-color: #ffc;
+		padding: 15px;
+		margin: auto;
+	}
+	
+</style>
+
+<script>
+	var nombre=prompt("Ingrese su nombre, porfavor!");
+	//validar que no se ingresen numeros como nombre 
+	
+	while(!isNaN(nombre))
+	{
+		nombre=prompt("Introduce un nombre válido");
+		
+	}
+	
+	var edad=parseInt(prompt("Ingrese su edad, porfavor!"));
+	//validar edad 
+	
+	while(edad<=0 || edad>105 || isNaN(edad) ){
+	
+		edad=parseInt(prompt("Introduce una edad válida"));
+	}
+	var poblacion=prompt("Ingrese la poblacion");
+	//validar población
+	while(!isNaN(poblacion))
+	{
+		poblacion=prompt("Ingrese una población válida");
+	}
+	
+</script>
+
+<body>
+
+<div id="contenedor">
+	
+	<p>Nombre:
+	<script>document.write(nombre);</script>
+	</p>
+	<p>Edad:
+	<script>document.write(edad);</script>
+	</p>
+	<p>Poblaci&oacute;n: 
+	<script>document.write(poblacion);</script>
+	</p>
+	
+</div>
+
+</body>
+</html>

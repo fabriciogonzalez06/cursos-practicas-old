@@ -1,0 +1,22 @@
+
+
+
+h1{
+	color:aqua;/*usando palabras clave de colores*/
+}
+
+h2{
+	color:rgb(53,131,44);/*Froma rgb decimal Tambien se puede con porcentajes 
+	color:rgb(10%,40%,50%);
+
+	*/
+}
+
+h4{
+	font-size: 40px;
+	color:rgba(49,163,239,.3);/*valor alfa para transparencias si se agrega la a A rgb  con valores del 0 al 1 entre ese rango en el cuarto parametro*/
+}
+
+h3{
+	color:#4d9b44;/*Forma hexadecimal*/
+}

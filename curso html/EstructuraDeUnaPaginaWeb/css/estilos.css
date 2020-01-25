@@ -1,0 +1,11 @@
+/*primero va el selector BODY	luego la propiedad BACKGROUND  y luego el color de fondo por la propiedad GREEN	*/
+body{
+	background:green;
+	color:#fff;/*color de la letra o tipografía */
+}
+
+/*Con código hexadecimal 
+
+body{background:#000000;}
+
+*/

@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mostrar Imganenes</title>
+<link rel="shorcut icon" href="imagenes/icono.ico">
+<link rel="stylesheet" href="css/estilos.css">
+<script src="JQuery/jquery-3.3.1.js"></script>
+<script>
+	$(document).ready(function(){
+		
+		$("body").hide().fadeIn(2000);
+		
+		
+		
+		
+	});
+	
+	//funcion que oculta las imagenes
+	function ocultar(){
+		
+		var imagenes=document.querySelectorAll("#imagenes img");
+		
+		//recorrer arreglo y ocultar cada imagen
+		for(var i=0;i<imagenes.length;i++){
+			
+			imagenes[i].style.visibility="hidden";
+		}
+		
+	}
+	
+	//funcion que muestra las imagenes
+		function mostrar(){
+		
+		var imagenes=document.querySelectorAll("#imagenes img");
+		
+		//recorrer arreglo y ocultar cada imagen
+		for(var i=0;i<imagenes.length;i++){
+			
+			imagenes[i].style.visibility="true";
+		}
+		
+	}
+	
+</script>
+</head>
+
+<body>
+
+<h1>MOSTRAR IMAGENES</h1>
+<div id="imagenes">
+	
+	<img src="imagenes/js.png" alt="">
+	<img src="imagenes/js.png" alt="">
+	<img src="imagenes/js.png" alt="">
+	
+</div>
+<div id="botones">
+	<input type="button" id="mostrar" class="boton" value="Mostrar" onClick="mostra()">
+	<input type="button" id="ocultar" class="boton" value="Ocultar" onClick="ocultar()">
+</div>
+
+</body>
+</html>

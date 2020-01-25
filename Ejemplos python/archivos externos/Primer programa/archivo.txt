@@ -1,0 +1,3 @@
+Hoy es un buen día para programar en python 
+ claro que siempre
+ y nunca dejara de serlo

@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	
+	background-color: coral;
+}
+
+div{
+	background-color: darkgoldenrod;
+	width: 100px;
+	height: 100px;
+	font-size: 40px;
+	color: royalblue;
+	float: left;/*flota las cajas de derecha a izquierda, se puede usar float right también 
+	se posicionan de derecha  a izquierda*/
+}
+
+a{
+	
+	font-size: 30px;
+	color: aqua;
+	
+	
+}

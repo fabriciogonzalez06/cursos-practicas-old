@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-color: brown;
+}
+
+
+div{
+	background-color: greenyellow;
+	width: 100px;
+	height: 100px;
+	color: blue;
+	font-size: 40px;
+}
+
+.caja{
+	position: fixed;/*cuenta a fuerza apartir de lo que es la ventana , no es como un
+	abosute dentro de un relative, aqui siempre esta fijo en la pantalla*/
+	top: 100px;
+	right:0 ;
+	left:300px;
+	bottom:0;
+}
+

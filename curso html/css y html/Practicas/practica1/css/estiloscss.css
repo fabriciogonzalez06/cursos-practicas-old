@@ -1,0 +1,55 @@
+body{
+    background-color:goldenrod;
+
+}
+
+h1{
+    font-size: 30px;
+    color: aqua;
+    text-align: center;
+}
+
+div{
+    background: black;
+  /*  color: aliceblue;*/
+    width: 40%;
+    
+    margin: 30px;
+    padding: 20px;
+    border: 10px solid blue;
+    display: inline-block;
+}
+
+div p{
+    color: greenyellow;
+}
+
+h2{
+    background: yellow;
+    color:red;
+    font-size: 30px;
+    text-align: center;
+}
+
+table{
+    border: 10px dotted white ;
+    background-color: brown;
+    
+}
+
+.primera{
+    font-size: 25px;
+}
+
+a{
+    font-size: 40px;
+    color: blueviolet;
+}
+
+sub{
+    color: red;
+
+}
+
+
+

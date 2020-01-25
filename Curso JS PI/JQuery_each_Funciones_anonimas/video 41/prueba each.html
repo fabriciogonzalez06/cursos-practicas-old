@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<style>
+
+img{
+	margin:0 20px;
+	
+}	
+#contenedor{
+	width:75%;
+	margin:auto;
+}
+
+</style>
+<script src="JQuery/jquery-3.3.1.js"></script>
+<script>
+	
+	$(document).ready(function(){
+	
+		
+		//poner a la escucha el boton 
+		document.getElementById("mibotoncambiar").addEventListener("click",cambiar,false);
+		
+		
+	});
+	
+	
+	//funcion cambiar 
+	function cambiar(){
+		
+		//$("img").fadeOut(1000).fadeIn(100).width("320");
+		
+		//utlizando función each y funciones anonimas 
+		$("img").each(
+		function(){
+		
+			$(this).fadeOut(1000).fadeIn(1200).width("320");
+		
+		}
+		);
+	}
+
+</script>
+</head>
+
+<body>
+<div id="contenedor">
+<img src="imgs/1.jpg">
+<img src="imgs/2.jpg">
+<img src="imgs/3.jpg">
+<img src="imgs/4.jpg">
+</div>
+<div id="boton">
+<input type="button" id="mibotoncambiar" value="Acción">
+</div>
+
+</body>
+</html>

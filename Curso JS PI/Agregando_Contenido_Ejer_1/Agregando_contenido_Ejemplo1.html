@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Agregando Contenido </title>
+<link rel="stylesheet" href="css/estilos.css">
+<script src="JQuery/jquery-3.3.1.js"></script>
+<script>
+
+	$(document).ready(function(){
+		
+		$("body").hide().fadeIn(3000);
+		
+		
+	});
+	
+	
+		//funcion validar
+	
+			function validar(){
+			//obtener el nombre de usuario
+			var usuario=document.getElementById("usuario").value;
+			var nombre=document.getElementById("nombre").value;
+			var apellido=document.getElementById("apellido").value;
+			
+			//ver si el usuario no esta vacio 
+			if(usuario==""){
+				//usar codigo JQuery para poner un mensaje despues de el text
+				//usar after
+				advertencia();//evita que se repita la advetencia
+				$("#usuario").after("<span id='advertencia'> Rellena aquí</span>");
+			}else{
+				advertencia();
+			}
+				
+			if(nombre==""){
+				advertencia();
+				$("#nombre").after("<span id='advertencia'> Rellena aquí</span>");
+			}else{
+				advertencia();
+			}
+			
+			
+		}
+	
+		function advertencia(){
+			$("#advertencia").remove();
+		}
+	
+</script>
+</head>
+
+<body>
+
+<form action="">
+	
+	<p>Registro</p>
+	<label for="usuario">Usuario:</label>
+	<input type="text" id="usuario" placeholder="Ingrese su usuario" >
+	<label for="nombre">Nombre:</label>
+	<input type="text" id="nombre" placeholder="Ingrese su nombre">
+	<label for="apellido" >Apellido:</label>
+	<input type="text" placeholder="Ingrese su apellido" id="apellido">
+	<input type="button" value="Enviar" id="enviar" onClick="validar()">
+	
+</form>
+
+</body>
+</html>

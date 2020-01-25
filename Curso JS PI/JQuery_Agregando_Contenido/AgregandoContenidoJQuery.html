@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+
+	.micontenedor{
+		background: #57EC11;
+	}
+	
+	.AB{
+		font-size: 2em;
+		color: #C615E5;
+	}
+	
+</style>
+<title>Agregando Contenido JQuery</title>
+<script src="JQuery/jquery-3.3.1.js"></script>
+<script>
+
+	
+	$(document).ready(function(){
+		
+		$("body").hide().fadeIn(5000);
+		
+		//La función html no agrega, solo sustituye
+		
+		//Mostrar el texto en un alert que esta especificado en el selector descendiente utilizando método html
+		//alert($("#errores h2").html());
+		
+		//sustituir texto 
+	 	//$("#errores").html("<p>Hay Errores en el Formulario</p>");
+		
+		//utilizar la función append para escribir mas texto despues de lo que haya a continuacion
+		$("#errores").append("<p>Hay Errores en el Formulario UTILIZANDO APPEND</p>");
+		
+		//utilizar la funcion prepend para escribir mas texto andes de lo que hay a continucacion
+		$("#errores").prepend("<p>Hay menos Errores en el Formulario UTILIZANDO PREPEND</p>");
+		
+		//utilizar funcion after y before para agregar contenido despues o antes de lo que estemos apuntando
+		
+		//utilizar funcion before para agregar contenido antes de lo que estamos apuntando
+		$("#errores").before("<p class=AB>Utilizando Before</p>");
+		
+
+		//utilizr funcion after  para agregar contedido despues de lo que estamos apuntado
+		$("#errores").after("<p class=AB>Utilizando after</p>");
+		
+		//utilizar funcion text. no se pueden sustituir etiquetas, SOLO UN TEXTO POR OTRO
+		$("#errores h2").text("Se sustituyo lo de errores, con un selector descendiente y utilizando funcion text");
+	});
+		
+</script>
+</head>
+
+<body>
+
+<div id="contenedor">
+
+<div id="errores" class="micontenedor">
+	<h2>Errores</h2>
+</div>
+	
+</div>
+
+</body>
+</html>

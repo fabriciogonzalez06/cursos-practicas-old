@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Eliminando_Remplazando Contenido</title>
+<style type="text/css">
+
+	#banner{
+		background-color: #f00;
+		width: 450px;
+		height: 300px;
+		position: absolute;
+		left: 400px;
+		top: 50px;
+		font-size: 36px;
+		text-align: center;
+		
+		
+		
+	}
+	
+
+	
+	img{
+		float: left;
+		margin:15px;
+		width: 250px;
+		height: 150px;
+		
+		
+	}
+	
+	img:hover{
+		cursor: pointer;
+		opacity: .9;
+	}
+	
+	
+	
+	#cerrar{
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	
+	#cerrar:hover{
+		font-weight: bold;
+	}
+	
+	
+	#imagen1,#imagen2,#imagen3,#imagen4{
+			float: left;
+		margin:15px;
+		width: 250px;
+		height: 150px;
+		font-size: 24px;
+		color: #7213E8;
+		text-align:center;
+	}
+
+	#compras{
+	  width: 25%;
+	}
+	
+</style>
+<script src="JQuery/jquery-3.3.1.js"></script>
+<script>
+	
+
+	$(document).ready(function(){
+		//identificar al banner 
+	/*	var z=document.getElementById("cerrar");
+		z.addEventListener("click",cerrar_banner,false);
+		*/
+		
+		//otra manera
+		document.getElementById("cerrar").addEventListener("click",cerrar_banner,false);
+	
+		//Array para identificar imagenes
+		var imagenes=document.querySelectorAll("#carrete img");
+		
+		//recorrer arreglos y poner a la escucha 
+		for(var i=0;i<imagenes.length;i++){
+			
+			//poner botones a la escucha
+			imagenes[i].addEventListener("click",carrito,false);
+		}
+		
+	});
+	
+	//variable para contar compras
+	var compras=0;
+	//funcion cerrar_banner
+	function cerrar_banner(){
+		$("#banner").remove();
+	}
+	
+	//funcion carrito
+	function carrito(num){
+		
+		if(num.target==imagen1){
+		
+		$("#imagen1").replaceWith("<div id='imagen1'>Agregado al carro</div>");
+		}
+		
+		if(num.target==imagen2){
+		
+		$("#imagen2").replaceWith("<div id='imagen2'>Agregado al carro</div>");
+		}
+		
+		if(num.target==imagen3){
+		
+		$("#imagen3").replaceWith("<div id='imagen3'>Agregado al carro</div>");
+		}
+		
+		if(num.target==imagen4){
+		
+		$("#imagen4").replaceWith("<div id='imagen4'>Agregado al carro</div>");
+		}
+		
+		compras+=1;
+		document.getElementById("compras").value=compras;
+	}
+
+	
+</script>
+</head>
+
+<body>
+<div id="banner"> 
+	<p>Necesitas Dinero?</p>
+	<input type="button" id="cerrar" value="X">
+</div>
+<div id="carrete">
+	<img src="imagenes/js.png" alt="" id="imagen1">
+	<img src="imagenes/js.png" alt="" id="imagen2">
+	<img src="imagenes/js.png" alt="" id="imagen3">
+	<img src="imagenes/js.png" alt="" id="imagen4">
+</div>
+<input type="text" id="compras">
+</body>
+</html>

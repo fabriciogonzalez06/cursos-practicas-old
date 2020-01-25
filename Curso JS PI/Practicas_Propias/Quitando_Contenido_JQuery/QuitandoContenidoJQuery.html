@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Quitando contenido JQuery</title>
+<style type="text/css">
+
+
+	.contenido{
+		width: 15%;
+		background-color: #FB9B9D;
+		height: 100px;
+		text-align: center;
+		padding-top: 25px;
+		display: inline-block;
+		margin-top: 50px;
+		font-family: Gotham, Helvetica Neue, Helvetica, Arial," sans-serif";
+		color: #011A07;
+	}
+	
+	.contenido:hover{
+		font-weight: bold;
+	}
+	
+	/*div para remplazar tener las mismas consideraciones de .contenido*/
+	
+	.agregado{
+		width: 15%;
+		background: #DC5FA5;
+		font-size: 25px;
+		display: inline-block;
+		height: 100px;
+	
+			
+	}
+	
+	#banner{
+		width: 20%;
+		background-color: aqua;
+		position: relative;
+		text-align: center;
+		font-weight: bold;
+		border: 2px solid #271E1E;
+		position: absolute;
+		top: 60px;
+		left: 80px;
+	}
+	
+	#btnAnuncio{
+		position:absolute;
+		top: 0;
+		right: 0;
+		color: red;
+	}
+	
+	#btnAnuncio:hover{
+		background: #ED1115;
+		color: #fff;
+	}
+	
+</style>
+
+<script src="JQuery/jquery-3.3.1.js"></script>
+<script>
+	
+$(document).ready(function(){
+	
+	$("body").hide().fadeIn(3000);
+	
+	//poner boton a la escucha del click 
+	document.getElementById("btnAnuncio").addEventListener("click",quitarAnuncio,false);
+	
+	//poner a las escucha todos los div con la clase contenido
+	var contenido=document.querySelectorAll(".contenido");
+	
+	for(i=0;i<contenido.length;i++){
+		
+		contenido[i].addEventListener("click",cambiar,false);
+	}
+	
+	
+});
+	
+	
+	//funcion quitar anuncio 
+	function quitarAnuncio(){
+		
+		//apuntar al anuncio usando JQuery
+		$("#banner").remove();
+	}
+	
+	//funcion para cambiar o remplazar el contenido
+	function cambiar(objeto){
+		
+		var remover;
+		
+		if(objeto.target==uno){
+			$("#uno").replaceWith("<div class='agregado' id='uno'>   <p>Compra exitosa</p></div>");
+		}else if(objeto.target==dos){
+			$("#dos").replaceWith("<div class='agregado' id='dos'>  <p>Compra exitosa</p></div>");
+		}else if(objeto.target==tres){
+			$("#tres").replaceWith("<div class='agregado' id='tres'>  <p>Compra exitosa</p></div>");
+		}else if(objeto.target==cuatro){
+			$("#cuatro").replaceWith("<div class='agregado' id='cuatro'> <p>Compra exitosa</p></div>");
+		}
+	}
+	
+</script>
+
+</head>
+
+<body>
+
+<div id="principal">
+
+<div class="contenido" id="uno">
+	
+	<p>Agregar</p>
+	
+</div>
+<div class="contenido" id="dos">
+	
+	<p>agregar</p>
+	
+</div>
+<div class="contenido" id="tres">
+	<p>Agregar</p>
+</div>
+<div class="contenido" id="cuatro">
+
+	<p>Agregar</p>	
+</div>
+	
+<div id="banner">
+	
+	<p>Compras online</p>
+	
+	<input type="button" value="X" id="btnAnuncio">
+</div>
+		
+	
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+/*selector universal para margin y padding eliminan todos los espacios casi solo para eso se utilizan*/
+
+/**{
+
+	margin:50;
+	padding:100;
+}*/	
+
+body{
+	background:pink;
+}
+
+/*Selectores de etiqueta*/
+h1,h2,h3,h4,h5,h6{
+	color:red;
+}
+
+body{
+	background-color: dodgerblue;
+}
+
+/* para el tamaño de la fuente expresado en pixeles*/
+h1{
+	font-size: 80px;
+}
+
+/*para el color de los parrafos*/
+p{
+	color: blue;
+
+}
+
+/*Selectores descendentes apuntan a etiquetas dentro de otras etiquetas*/
+p a{/*de los parrafos buscar todos los elementos a y poner en tamaño 20 pixeles*/
+	font-size: 20px;
+	color:orange;
+}
+
+/*Selectore de clase para el mismo ejemplo anterior quiero el mismo link pero de otro color y tamaño entando en una clase */
+
+.yellow{
+	color:green;
+}
+
+/*Combinación de selectores de clases y de etiquetas */
+
+p .yellow{/*Todo lo que esta dentro de un parrafo que tenga la clase yellow*/
+	color:lightgreen;
+
+}
+
+
+/*Modificar solo links personalizados*/
+
+a[href="http://www.google.com"]{
+
+	color:darkgreen;
+	font-size: 40px;
+}

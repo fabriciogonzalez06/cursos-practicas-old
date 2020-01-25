@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Compras en l&iacute;nea</title>
+<link rel="shortcut icon" href="imagenes/icono.ico">
+<style type="text/css">
+	
+	body{
+		background:#EB5E60 ;
+	}
+	</style>
+<link rel="stylesheet" href="css/estilos.css">
+<script src="JQuery/jquery-3.3.1.js"></script>
+<script>
+	
+	$(document).ready(function(){
+		
+		//poner efecto que aparece cuando carga la pagina
+		$("body").hide().fadeIn(3000);
+		
+		//poner a la escucha el boton cerrar del anuncio
+		document.getElementById("cerrarAnuncio").addEventListener("click",cerrar,false);
+		
+		//identificar botones y guardarlas en un array
+		var botones=document.querySelectorAll("table input[type='button']");
+		
+		for(var i=0;i<botones.length;i++){
+			
+			//poner a la escucha los botones
+			botones[i].addEventListener("click",comprarA,false);
+			
+			
+		}
+	});
+
+	
+	//Función cerrar anuncio
+	function cerrar(){
+		//identificar el div del anuncio para remover
+		$("#anuncio").remove();
+	}
+	
+	//funcion comprar al hacer click en cualquier boton 
+	function comprarA(num){
+		
+		if(num.target==comprar1){
+			//identificar el elemento que quiero remplazar 
+			$(".columna #imagen1").replaceWith("<div class='img' id='imagen1'>Agregado al carrito</div>");
+		}
+		
+		if(num.target==comprar2){
+			
+			$(".columna #imagen2").replaceWith("<div class='img' id='imagen1'>Agregado al carrito</div>");
+		}
+		
+		if(num.target==comprar3){
+			
+			$(".columna #imagen3").replaceWith("<div class='img' id='imagen1'>Agregado al carrito</div>");
+		}
+		
+		//este metodo a su ves llama a otro metodo
+		estilo();
+	}
+	
+	
+	//metodo para cambiar el estilo  con JQuery
+	function estilo()
+	{
+		$(".img").addClass("cambiarEstilo");
+	}
+	</script>
+
+
+</head>
+
+<body>
+
+<div id="principal">
+	
+	
+	<div id="banner">
+		
+		<div id="imagen"><img src="imagenes/js.png" alt="" width="340px"></div>
+		
+		<ul id="barranavegacion">
+			<li><a href="#">Preguntas</a></li>
+			<li><a href="#">Recursos</a></li>
+			<li><a href="#">Contactanos</a></li>
+		</ul>
+		
+	</div>
+	<div id="contenido">
+		
+		<h1>Compras en l&iacute;nea</h1>
+		
+		<table>
+			<tr>
+				<th colspan="2"><p>Comprar</p></th>
+			</tr>
+			<tr>
+				<td class="columna"><input type="button" id="comprar1" value="comprar"></td>
+				<td class="columna"><img src="imagenes/js.png" alt="" id="imagen1" ></td>
+			</tr>
+			<tr>
+				<td class="columna"><input type="button" id="comprar2" value="comprar"></td>
+				<td class="columna"><img src="imagenes/js.png" alt="" id="imagen2" ></td>
+			</tr>
+			<tr>
+				<td class="columna"><input type="button" id="comprar3" value="comprar"></td>
+				<td class="columna"><img src="imagenes/js.png" alt="" id="imagen3" ></td>
+			</tr>
+		</table>
+		
+	</div>
+	
+	
+	<div id="anuncio">
+		<h3>Compra en linea</h3>
+		<input type="button" id="cerrarAnuncio" value="X">
+	</div>
+	
+	<div id="footer">
+		
+		<p>2019 Todos los derechos reservados. Angel Fabricio</p>
+		
+	</div>
+	
+</div>
+
+</body>
+</html>

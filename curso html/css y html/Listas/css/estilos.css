@@ -1,0 +1,41 @@
+
+
+.menu{
+
+	width: 100%;
+	background: #000;
+	list-style: none;/*quitar forma lista*/
+	margin: 0;
+	padding: 0;
+}
+
+
+.menu li{
+	display: inline-block;
+}
+
+.menu li a{
+	display: inline-block;
+	padding: 10px 20px;
+	color: #fff;
+}
+
+.menu li a:hover{
+	background: #ccc;
+	color: #000;
+}
+
+/*
+
+ul {
+
+	list-style-type: circle; disc ,circle,square
+	list-style-position: inside;por defecto outside
+}
+
+
+ol{
+	list-style-type: decimal-leading-zero;Decimal,upper-latin,lower-latin
+}
+
+*/

@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Leyendo y Cambiando Atributos html</title>
+<script src="JQuery/jquery-3.3.1.js"></script>
+<script>
+	
+
+	$(document).ready(function(){
+		
+		//poner a la escucha la imagen 
+		document.getElementById("img1").addEventListener("mouseover",cambiar,false);
+		document.getElementById("img1").addEventListener("mouseout",restaurar,false);
+	});
+	
+	//funcion cambiar imagen
+	function cambiar()
+	{
+		//con attr primero va el atributo a cambiar y luego va el contenido a remplazar
+		$("img").attr("src","Imagenes/dos.png");
+	}
+	
+	//funcion para volver a restaurar la imagen
+	function restaurar(){
+		
+		$("img").attr("src","Imagenes/uno.jpg");
+	}
+	
+</script>
+</head>
+
+<body>
+<img src="Imagenes/uno.jpg" id="img1" width="300px" alt="">
+</body>
+</html>

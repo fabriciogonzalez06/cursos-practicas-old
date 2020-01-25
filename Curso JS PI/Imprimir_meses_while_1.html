@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Imprimir meses while 1</title>
+
+<style type="text/css">
+	
+	p{
+	
+		color: #DF2326;
+		font-size: 1.5em;
+		font-family: Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+		text-transform: uppercase;
+	}
+	
+	hr{
+		width: 40%;
+		margin-left: 0px;
+		border-bottom: 5px dashed #F59395;
+	}
+	
+	#meses{
+		float: left;
+		width: 35%;
+	}
+	
+	h2{
+		font-size: 1.3em;
+		font-family: Consolas, Andale Mono, Lucida Console, Lucida Sans Typewriter, Monaco, Courier New, monospace;
+		text-transform: uppercase;
+		color: #074EDC;
+		border-bottom: 3px solid #D1CB25;
+		overflow: hidden;
+	}
+	
+</style>
+
+
+<script>
+	
+//declarrar array con los meses 
+	var meses=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto",
+			  "Septiembre","Octubre","Noviembre","Diciembre"];
+	
+	//dias de la semana
+	var dias=new Array("Lunes","Martes","Miercoles","Jueves","Viernes","Sabado","Domingo");
+
+	
+</script>
+</head>
+
+<body>
+
+<script>
+	
+//definir contador 
+	var contador=0;
+	
+	document.write("<div id=meses >");
+	//imprimir array
+	while(contador<meses.length)
+	{
+		document.write("<p>"+meses[contador] + "</p><hr>");
+		
+		contador++;
+	}
+	document.write("</div>");
+	
+	
+	//imprimir dias de la semana 
+	contador=0;
+	
+	document.write("<div id=dias >");
+	
+	
+	document.write("<h2>Dias de la semana</h2>");
+	
+	while(contador<dias.length)
+	{
+		document.write("<p>" + dias[contador] + "</p><hr>");
+		
+		contador++;
+	}
+	
+	document.write("</div>");
+</script>
+
+</body>
+</html>

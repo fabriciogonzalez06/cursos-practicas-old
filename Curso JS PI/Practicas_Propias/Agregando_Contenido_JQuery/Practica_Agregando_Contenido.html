@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Practica Agregando Contenido</title>
+
+<style type="text/css">
+	
+	body{
+		background-color: #D937F5;
+	}
+	
+	#contenido{
+		width: 25%;
+		height: 100px;
+		background: #6FC4F3;
+		text-align: center;
+		padding-top: 20px;
+		text-transform: uppercase;
+		font-weight: bold;
+		margin: auto;
+		
+	}
+	
+	#mostrar{
+		color: white;
+		background: black;
+		border: none;
+		padding: 5px;
+	}
+	
+	#mostrar:hover{
+		background: white;
+		color: black;
+		font-weight: bold;
+	}
+	
+</style>
+
+<script src="JQuery/jquery-3.3.1.js"></script>
+<script>
+	
+
+	$(document).ready(function(){
+		
+		//Poner a la escucha el boton 
+		document.getElementById("mostrar").addEventListener("click",ejecutar,false);
+		
+		$("body").hide().fadeIn(2000);
+		
+		
+		
+	});
+	
+	//funcion ejecutar 
+	function ejecutar(){
+		
+		//usar las funciones de agredado 
+		
+		$("#contenido").append("<p>Ejemplo append</p>").prepend("<p>Prepend</p>").after("<p>after</p>").before("<p>Before</p>");
+		
+	}
+	
+</script>
+</head>
+
+<body>
+<div id="contenido">
+	
+	<p>Agregando contenido JQuery</p>
+	<input type="button" id="mostrar" value="mostrar">
+</div>
+
+</body>
+</html>

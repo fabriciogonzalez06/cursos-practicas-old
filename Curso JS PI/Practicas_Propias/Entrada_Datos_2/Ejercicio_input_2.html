@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Entrada Datos 2 </title>
+
+<link rel="shortcut icon" href="imagenes/icono.ico">
+
+<!--hoja de css y texto js-->
+<link rel="stylesheet" href="css/estilos.css">
+
+
+<script>
+
+var nombre=prompt("Ingrese su nombre");
+
+var apellido=prompt("Ingrese su apellido " + nombre);
+
+var pais=prompt("Ingrese su pais " + nombre + " " + apellido);
+
+	alert("RESGISTRADO");
+	
+</script>
+
+</head>
+
+
+
+<body>
+
+<div id="Principal">
+	
+	
+	<div id="banner">
+		
+		<div><img src="imagenes/js.png" alt="" height="150px" width="400px"></div>
+		
+	</div>
+	
+	<div id="contenido">
+		
+		<h1>FABRICIO GONZ&Aacute;LEZ</h1>
+		
+		<div id="lista">
+			
+			<h2 class="h2">Lenguajes de programaci&oacute;n</h2>
+			
+			<ul>
+				<li>C#</li>
+				<li>JavaScript</li>
+				<li>Python</li>
+				<li>Java</li>
+		
+			</ul>
+			
+		</div>
+		
+		<script>
+		
+			document.write("<p>");
+			document.write("Cliente: " + nombre + " " + apellido + "</br>" + " Pais: " + pais);
+			document.write("</p>");
+			
+		</script>
+		
+	</div>
+	
+
+	
+	
+</div>
+
+
+</body>
+</html>

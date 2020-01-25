@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es>
+<head>
+	<meta charset="UTF-8>
+	<title>Nuevas reglas css</title>
+	<style type="text/css">
+		
+		p{
+			margin: 30px;
+		}
+		
+		/*para los parrafos con nombre misParrafos*/
+		p[name="misParrafos"]{
+			color:blue;
+		}
+		
+		/*Para los parrafos que comiencen el name con 'des'*/
+		p[name^="des"]{
+			color: #298E41;
+		}
+
+		/*Para los p que el name termine en 'ño'*/
+		p[name$="ño"]{
+			color: #F4C522;
+		}
+
+		/*para los p que en algun parte del name tengan 'du'*/
+		p[name*="du"]{
+			color: #8A99F2;
+		}
+
+	</style>
+</head>
+<body>
+	<p name="misParrafos">Hola</p>
+	<p name="despedida">Adios</p>
+	<p name="despedida">Hasta luego</p>
+	<p name="mesAño">Febrero</p>
+	<p name="mesAño">Junio</p>
+	<p name="honduras">Honduras es bello</p>
+	<p name="honduras"> por siempre</p>
+maps1998
+32496044
+
+	<hr>
+
+	<header id="princiapl">
+		<span id="titulo">Curso Css3</span>
+	</header>
+</body>
+</html>

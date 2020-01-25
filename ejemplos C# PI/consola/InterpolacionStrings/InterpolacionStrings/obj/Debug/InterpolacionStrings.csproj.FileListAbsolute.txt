@@ -1,0 +1,7 @@
+C:\Users\Fabricio González\Desktop\Cursos\ejemplos C# PI\consola\InterpolacionStrings\InterpolacionStrings\bin\Debug\InterpolacionStrings.exe.config
+C:\Users\Fabricio González\Desktop\Cursos\ejemplos C# PI\consola\InterpolacionStrings\InterpolacionStrings\bin\Debug\InterpolacionStrings.exe
+C:\Users\Fabricio González\Desktop\Cursos\ejemplos C# PI\consola\InterpolacionStrings\InterpolacionStrings\bin\Debug\InterpolacionStrings.pdb
+C:\Users\Fabricio González\Desktop\Cursos\ejemplos C# PI\consola\InterpolacionStrings\InterpolacionStrings\obj\Debug\InterpolacionStrings.csprojAssemblyReference.cache
+C:\Users\Fabricio González\Desktop\Cursos\ejemplos C# PI\consola\InterpolacionStrings\InterpolacionStrings\obj\Debug\InterpolacionStrings.csproj.CoreCompileInputs.cache
+C:\Users\Fabricio González\Desktop\Cursos\ejemplos C# PI\consola\InterpolacionStrings\InterpolacionStrings\obj\Debug\InterpolacionStrings.exe
+C:\Users\Fabricio González\Desktop\Cursos\ejemplos C# PI\consola\InterpolacionStrings\InterpolacionStrings\obj\Debug\InterpolacionStrings.pdb

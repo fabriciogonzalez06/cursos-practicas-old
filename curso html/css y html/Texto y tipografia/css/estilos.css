@@ -1,0 +1,35 @@
+body{
+	
+	background: url(../imagenes/logo.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 80%  100%
+}
+
+h1{
+
+	background: lightgreen;
+	text-align: center;
+	font-size:50px;
+	color:rgba(49,163,239,.5);
+
+}
+
+
+p{
+	/*Tipografía */
+	color: #ff8000;
+	font-family: arial, helvetica,sans-serif,"Century gothic";
+	font-size: 20px;
+	font-weight: normal;/*bold*/
+
+	/*Alineación Texto*/
+	text-align: left;
+	line-height: 40px;
+	text-decoration: underline;/*none,overline,line-through*/
+	text-transform: uppercase;/*capitalize,cada inicio de letra en mayuscula,uppercase,lowercase*/
+	letter-spacing: normal;/*espaciado entre letras, se pueden utilizar px*/
+	word-spacing: normal;/*espaciado despues de cada palabra*/
+	text-shadow: 5px 5px 5px #000;/*sombra , 5 px empezando de izquierda a derecha, 5px verticalmente , 5px de tamaño y un culor */
+}
+

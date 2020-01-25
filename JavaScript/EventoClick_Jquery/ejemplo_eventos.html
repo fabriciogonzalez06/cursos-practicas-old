@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Introducción a eventos</title>
+<style>
+h1{
+	text-align:center;
+}
+body{
+	background-color:#334873;
+	color:#FFF;
+}
+
+#principal{
+	width:60%;
+	margin:auto;
+}
+
+a{
+	color:#FFF;
+	font:bold 20px Verdana, Geneva, sans-serif;
+} 
+</style>
+<script src="Jquery/jquery-3.4.0.js"></script>
+<script>
+
+$(document).ready(function() {
+	
+	$("body").hide().fadeIn(4000);
+
+	//Funcio doble click
+	$(document).dblclick(function() {
+		/* Act on the event */
+		alert("ayyy");
+	});
+
+	//funcion cuando pase el ratón por encima 
+	$("a").mouseover(function() {
+		
+		var mensaje ="<p class='mensaje'>Estas pasando el ratón por encima del link </p>";
+
+		$("#principal").append(mensaje);
+
+	});
+
+	//Funcion cuando deje de pasar el ratón por encima 
+	$("a").mouseout(function() {
+		
+		$(".mensaje").remove();
+	});
+
+	//evento click 
+	$("#el_boton").click(function() {
+		$(this).val("Para de dar click");
+	});
+
+	//Evento focus
+	$("#el_campo").focus(function() {
+		$(this).css('background-color', 'blue');
+
+		if ($("#el_boton").val("Para de dar click")){
+			$("#el_boton").val("Un boton");
+		}
+	});
+
+	//Cuando salga de la caja de texto 
+	$("#el_campo").mouseout(function() {
+		$(this).css('background-color', 'white');
+	});
+});
+
+</script>
+</head>
+<body>
+
+<div id="principal">
+
+<h1>Introducción a eventos</h1>
+
+<p><a href="#">Un link</a></p>
+
+<form action="#" method="get">
+<fieldset><legend>Formulario</legend><p>
+  <input name="button" type="button" id="el_boton" value="Un boton">
+</p>
+<p><input name="textfield" type="text" id="el_campo"></p></fieldset>
+</form>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+nombre: josenombre: jose
+Apellido: martinez
+Edad: 23
+Correo Electrónico: martinezJose@hotmail.com

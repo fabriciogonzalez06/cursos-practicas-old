@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Usando Arrays</title>
+<link rel="stylesheet" href="css/micss.css">
+<script>
+
+	//arreglo de articulos
+	var articulos=["Zapatilla","Camiseta","Pantalón","Calcetines"];
+	//otra manera
+	var articulo2=new Array("Zapatilla","Camiseta","Pantalón","Calcetines");
+	//Array vacío
+	var articulos3=[];
+</script>
+</head>
+
+<body>
+<div class="contenedor">
+  <div class="header">
+    <p class="logo">JavaScript Arrays <i class="mm">Píldoras Informáticas
+    </i>
+     </p>
+  </div>
+  <div class="contenido">
+    <div class="principal">
+      <h1>Manejando Arrays</h1>
+      <script>
+	  
+
+		 
+		document.write("<p>El primer artículo es : <strong>" );
+		 
+		 
+		 document.write(  articulos[0] + "</strong></p>"); 
+		  
+		  document.write("<p> El ultimo elemento  es : <strong> " + (articulos[articulos.length-1]) + "</strong></p>");
+		
+		  //agregar elemento al comienzo del array
+		  articulos.unshift("Balón");
+		  
+		  document.write("<p>Casi nos olvidamos!! Agregamos este elemento: <strong>" + articulos[0] + 
+						"</strong></p>");
+		  
+		  //Agregar un elemento al final del array
+		  
+		  //articulos.push("Raqueta");
+		  
+		  //pedirlo al usuario
+		  
+		  articulos.push(prompt("Introduce el artículo"));
+		  
+		  document.write("<p>Tambi&eacute;n agregamos este elemento al final <strong>" +articulos[articulos.length-1] + "</strong></p>");
+		  
+		  //borrar el primer elemento 
+		  alert("Borraremos el primer elemento");
+		  
+		  articulos.shift();
+		  
+		  document.write("<p>Ahora el primer elemento es:<strong>" + articulos[0] + "</strong></p>");
+		  
+		  //borrar el ultimo elemento de un array
+		  alert("Ahora borraremos el último elemento");
+		  
+		  articulos.pop();
+		  
+		  document.write("<p>Ahora el último elemento es:<strong>" + articulos[articulos.length-1] + 
+						"</strong></p>");
+		  
+		  
+		alert(articulos.length);
+		  
+		
+	  </script>
+     </div>
+  </div>
+  
+</div>
+</body>
+</html>

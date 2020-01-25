@@ -1,0 +1,21 @@
+
+body{
+	background-color: lightgreen;
+}
+
+h1{
+	text-align: center;
+	font-size: 50px;
+	color: blue;
+}
+
+div{
+	width: 300px;
+	height: 120px;
+	background:#ff8000;
+	margin:20px ;/*Margenes externos a los cuatro lados si solo lo ponemos asi*/
+	margin: 20px 50px; /*margen de 20 px arriba y abajo y margen de 50 pixeles a los lados */
+	padding: 30px;
+	border:10px dotted #000;/*Border de tipo solid con 10 pixeles y el borde de color negro, se puede especificar los tres tipos de colores */
+	display: inline-block;/*inline no se puede para bloques, no se puede cuando tiene width y height*/
+}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ciclo for 2</title>
+<style type="text/css">
+	
+
+	p{
+		font-size: 1.7em;
+		color: #74090B;
+		font-family: DejaVu Sans, Verdana," sans-serif";
+		text-transform: uppercase;
+		background: #88F425;
+		padding: 10px;
+		text-align: center;
+	}
+	
+</style>
+<script>
+	
+
+	var trabajadores=new Array();
+	
+	var contador=0;
+	
+	var persona="";
+	
+	//hacer ciclo while para llenar trabajadores 
+	while(persona!="salir"){
+		
+		persona=prompt("Introduce trabajador o escriba salir").toLowerCase();
+		
+		//asinar un valor ala array
+		trabajadores[contador]=persona;
+		
+		contador++;
+		
+	}
+	
+	//eliminar la ultima posicion del array
+	trabajadores.pop();
+	
+	//mostrar lo que tiene el array
+	for(var i=0;i<trabajadores.length;i++){
+		
+		document.write("<p> " + trabajadores[i] + "</p><hr>");
+	}
+	
+	
+</script>
+</head>
+
+<body>
+</body>
+</html>
